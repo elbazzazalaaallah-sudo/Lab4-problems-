@@ -8,10 +8,15 @@ public class Person {
     protected String phone;
     protected String email;
 
+    public Person (){ }
+
     public Person(String firstName, String secondName, String telephone, String email) {
         this.id = nextId++;
         this.firstName = firstName;
         // add others
+        this.secondName = secondName;
+        this.phone = telephone;
+        this.email = email;
     }
 }
 
