@@ -12,6 +12,12 @@ public class Test {
         // Display computer science students
         System.out.println("The list of students in the computer science major is:");
         m1.displayStudents();
+        System.out.println(s1.getFullNameFormatted());
+        System.out.println(m1.findStudentByCNE("AS63578"));
+        System.out.println(m1.getStudentCount());
+        System.out.println(m1.getStudentListAsString());
+        System.out.println(m1.removeStudent("AS63578"));
+        m1.getOccupancyRate();
     }
 }
 

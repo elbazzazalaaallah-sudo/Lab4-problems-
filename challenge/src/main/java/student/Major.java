@@ -101,7 +101,7 @@ public class Major {
    public void getOccupancyRate(){
        System.out.println(name + "capacity : 50 students");
        System.out.println("Current enrollment : "+getStudentCount()+"students");
-       float occup = getStudentCount()/50*100;
+       double occup = getStudentCount()*1.0/50*100;
        System.out.println("Occupancy rate = "+occup+"%");
    }
 

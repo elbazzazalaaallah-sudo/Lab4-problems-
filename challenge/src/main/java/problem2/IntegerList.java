@@ -3,6 +3,7 @@ package problem2;
 public class IntegerList
 {
     int[] list; //values in the list
+
     //-------------------------------------------------------
 //create a list of the given size
 //-------------------------------------------------------
@@ -27,7 +28,7 @@ public class IntegerList
             System.out.println(i + ":\t" + list[i]);
     }
 
-    int currNum = list.length;
+    int currNum = 0;
     public void increaseSize(){
         int size = list.length*2;
         int[] list1 = new int[size];
@@ -50,8 +51,8 @@ public class IntegerList
             if (list[i] == newVal){
                 for(int j=i;j<list.length-1;j++){
                     list[j] = list[j+1];
-                    currNum--;
                 }
+                currNum--;
                 break;
             }
         }
@@ -62,8 +63,8 @@ public class IntegerList
             if (list[i] == newVal){
                 for(int j=i;j<list.length-1;j++){
                     list[j] = list[j+1];
-                    currNum--;
                 }
+                currNum--;
             }
         }
     }
